@@ -41,7 +41,7 @@ brew tap ethereum/ethereum
 brew install ethereum
 ```
 
-Check point: launch Geth to verify your GETH installation using testnet blockchain
+**Check point**: launch Geth to verify your GETH installation using testnet or ropsten blockchains
 
 ```
 geth --datadir testNet --dev console 2>> test.log
@@ -72,7 +72,9 @@ ganache-cli -p 7545
 ![wispochains geth](https://github.com/rosecondon/wispochains/blob/master/img/ganache.png)
 
 ### Ethereum Wallet
-To access [Ethereum Wallet](https://github.com/ethereum/mist/releases), you need to download it onto desktop. The downside is this may take a while, since the wallet has to sync with every node in the blockchain
+To access [Ethereum Wallet](https://github.com/ethereum/mist/releases), you need to download it onto desktop. The downside is this may take a while, since the wallet has to sync with every node in the blockchain.
+
+![wispochains geth](https://github.com/rosecondon/wispochains/blob/master/img/ethereum_wallet.png)
 
 ### MetaMask
 
