@@ -1,6 +1,6 @@
 # Blockchain Development Environment Setup
 
-Steps to setup Ethereum development Environments on MacOs 10.11 +. 
+Steps to setup Ethereum and HyperLedger Fabric development Environments on MacOs 10.11 +. 
 These instructions will get you a quick way to setup your own local Blockchain Environments on MacOs for development and testing purposes.
 
 ## Ethereum
@@ -83,4 +83,43 @@ Install it as a Google Chrome Extension Plus, Start from [Here](https://metamask
 You can access to Ethereum blockchain to view your accounts
 ![wispochains geth](https://github.com/rosecondon/wispochains/blob/master/img/metaMask_Acct.png)
 
+## HyperLedger Fabric
+
+### Docker
+
+Install [Docker](https://docs.docker.com/install/) - Docker version 17.03.0-ce or greater is required
+
+```
+docker --version
+```
+It should aslo have docker compose installed, required 1.8 and up
+```
+docker-compose --version
+```
+### set up $GOPATH - Go programming language 
+
+Fabric requires 1.7.x for many of its components, add two lines below to .bash_profile or .bashrc
+
+```
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+. ~/.bash_profile
+```
+### Install Node.js and NPM
+Node: requires 8.9 or higher (note version 9 is not supported)
+npm: v5.x
+
+```
+npm install -g grunt-cli
+brew install node
+```
+To upgrade NPM
+```
+npm install npm@3.10.10 -g
+```
+
+### Install [cURL](https://curl.haxx.se/download.html) 
+```
+brew install curl
+```
 
