@@ -1,6 +1,6 @@
 # Blockchain Development Environment Setup
 
-Steps to setup Ethereum, HyperLedger Faric development Environments on MacOs 10.11 +. 
+Steps to setup Ethereum development Environments on MacOs 10.11 +. 
 These instructions will get you a quick way to setup your own local Blockchain Environments on MacOs for development and testing purposes.
 
 ## Ethereum
