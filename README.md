@@ -3,7 +3,7 @@
 Steps to setup Ethereum and HyperLedger Fabric development Environments on MacOs 10.11 +. 
 These instructions will get you a quick way to setup your own local Blockchain Environments on MacOs for development and testing purposes.
 
-## Ethereum
+## Ethereum Setup
 
 ### Recap before we start
     
@@ -83,9 +83,9 @@ Install it as a Google Chrome Extension Plus, Start from [Here](https://metamask
 You can access to Ethereum blockchain to view your accounts
 ![wispochains geth](https://github.com/rosecondon/wispochains/blob/master/img/metaMask_Acct.png)
 
-## HyperLedger Fabric
+## HyperLedger Fabric Setup
 
-### Prerequisites
+### Installation Prerequisites
 
 #### Docker
 
@@ -98,7 +98,8 @@ It should aslo have docker compose installed, required 1.8 and up
 ```
 docker-compose --version
 ```
-#### set up $GOPATH - Go programming language 
+
+#### Setup $GOPATH - Go programming language 
 
 Fabric requires 1.7.x for many of its components, add two lines below to .bash_profile or .bashrc
 
@@ -107,6 +108,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 . ~/.bash_profile
 ```
+
 #### Install Node.js and NPM
 Node: requires 8.9 or higher (note version 9 is not supported)
 npm: v5.x
@@ -119,10 +121,13 @@ To upgrade NPM
 ```
 sudo npm install npm@3.10.10 -g
 ```
-#### Install [cURL](https://curl.haxx.se/download.html) 
+
+#### Install [cURL](https://curl.haxx.se/download.html) to transfer data from server
 ```
 brew install curl
+curl -V
 ```
+
 ### Get to Start
 
 #### Install Binaries and Docker Images
@@ -131,6 +136,7 @@ Fetch source code from GIT
 git clone https://github.com/hyperledger/fabric-samples.git
 cd fabric-samples
 ```
+
 #### Install the Hyperledger Fabric platform-specific binaries
 Note: If you receive this error "Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?", please ensure the docker deamon is up and running - launch Docker
 
@@ -140,16 +146,18 @@ curl -sSL https://goo.gl/byy2Qj | bash -s 1.0.5
 ```
 The curl command above downloads and executes a bash script that will download and extract all of the platform-specific binaries and bin you will need to set up your network.
 
-You should see this
 ![wispochains geth](https://github.com/rosecondon/wispochains/blob/master/img/fabricBinary.png)
 
 #### Set bin PATH environment variable
+
 ```
 export PATH=<path to download location>/bin:$PATH
 . ~/.bash_profile
 ```
+
 #### Generate Fabric Network Artifacts
 Go to fabric-samples, then first-network directory, execute byfn.sh
+
 ```
 ./byfn.sh -m generate
 ```
@@ -158,6 +166,7 @@ and bring up the network
 ```
 ./byfn.sh -m up
 ```
-Then you should see this
+
 ![wispochains geth](https://github.com/rosecondon/wispochains/blob/master/img/fabricUp.png)
 
+## Congratulations!
