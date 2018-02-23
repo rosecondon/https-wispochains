@@ -6,17 +6,20 @@ Get a copy of the TokenERC20.sol, go to [Remix](http://remix.ethereum.org)
 
 Click on + to create a new file with same name - TokenERC20.sol
 
-![alt text](http://url/to/img.png)
+![alt remix](https://github.com/rosecondon/wispochains/blob/master/smartContracts/img/Remix.png)
 
 ### Initial Contract
-Add parameters into Create input box
+Add parameters into Create input box, click Create button
 
-![alt text](http://url/to/img.png)
+![alt deploy](https://github.com/rosecondon/wispochains/blob/master/smartContracts/img/DeployContract.png)
 
 ### Submit Contract
-![alt text](http://url/to/img.png)
+![alt submit](https://github.com/rosecondon/wispochains/blob/master/smartContracts/img/ContractSubmit.png)
 
 ### Check Contact Deploy Status
-![alt text](http://url/to/img.png)
+a) By ETH network
+
+b) By MetaMask
+![alt wallet](https://github.com/rosecondon/wispochains/blob/master/smartContracts/img/Completed.png)
 
 ### Done!
